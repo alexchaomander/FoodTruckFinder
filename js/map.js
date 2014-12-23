@@ -9,7 +9,7 @@ function initialize() {
   var sanFrancisco = new google.maps.LatLng(37.7833, -122.4167);
 
   var mapOptions = {
-    zoom: 12,
+    zoom: 14,
     center: sanFrancisco,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     panControl: true,
@@ -34,14 +34,15 @@ function addMarker(location, row_id) {
   var marker = new google.maps.Marker({
     position: location,
     map: map,
-    title: row_id + ""
+    title: row_id + "",
+    icon : '../images/foodTruckIcon.ico'
   });
   markers.push(marker);
   markers_map[row_id] = marker;
 
   var address = getAddress(row_id);
   var name = getName(row_id);
-  var message = "<p>" + name + "</p> \
+  var message = "<p><b>" + name + "</b></p> \
       <p>" + address + "</p>";
 
   var infoWindow = new google.maps.InfoWindow({
