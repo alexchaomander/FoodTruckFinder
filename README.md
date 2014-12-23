@@ -1,1 +1,1 @@
-A way to find nearby foodtrucks in SF
+A way to find nearby food trucks in SF
