@@ -26,6 +26,18 @@ function initialize() {
 
   // Adds a marker at the center of the map.
   // addMarker(sanFrancisco);
+  var center = new google.maps.Marker({
+      position: sanFrancisco,
+      map: map,
+      title: "San Francisco",
+  });
+  markers.push(center);
+  var infoWindow = new google.maps.InfoWindow({});
+  infoWindow.setContent("San Francisco");
+
+  google.maps.event.addListener(center, 'click', function() {
+    infoWindow.open(map, center)
+  });
   fillMap(); 
 }
 
