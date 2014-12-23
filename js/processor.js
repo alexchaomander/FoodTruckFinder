@@ -22,7 +22,7 @@ function handleConstraintsChange(new_constraints) {
             constraints[name] = new_constraints[name];
         }
 
-        if (min.reg.test(name)) {
+        if (min_reg.test(name)) {
             if (new_constraints[name] >= constraints[name]) {
                 constraints[name] = new_constraints[name];
             } else {
