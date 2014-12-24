@@ -1,5 +1,8 @@
+# Data processing and food category generation
+
 data = read.csv("Mobile_Food_Facility_Permit.csv", header=T)
 require('sqldf')
+# Only use food trucks that have status of 'approved'
 approvedFoodTrucks = sqldf("select * from data where Status like '%Approved%'")
 
 foodItems = approvedFoodTrucks$FoodItems
