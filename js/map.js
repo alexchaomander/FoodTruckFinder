@@ -54,8 +54,11 @@ function addMarker(location, row_id) {
 
   var address = getAddress(row_id);
   var name = getName(row_id);
-  var message = "<p><b>" + name + "</b></p> \
-      <p>" + address + "</p>";
+  var category = getCategory(row_id);
+
+  var message = "<p><b>" + name + "</b></p>" +
+      "<p>" + address + "</p>" +
+      "<p>" + category + "</p>";
 
   var infoWindow = new google.maps.InfoWindow({
     //content: markers_map[row_id]["name"] + "\n" + markers_map[row_id]["full_address"]
@@ -140,6 +143,15 @@ function getName(row_id) {
     for (var i = 0; i < validMarkers.length; i++) {
         if (validMarkers[i][""] == row_id) {
             return validMarkers[i]["Applicant"];
+        }
+    }
+}
+
+function getCategory(row_id) {
+    for (var i = 0; i < validMarkers.length; i++) {
+        if (validMarkers[i][""] == row_id) {
+            var category = validMarkers[i]["FoodItems"].split(":");
+            return category[0];
         }
     }
 }
