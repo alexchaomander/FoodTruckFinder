@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.11.1.custom/jquery-ui.theme.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+        <link rel="icon" type="image/png" href="images/favicon.ico">
         <script src="js/map.js"></script>
         <script src="js/processor.js"></script>
 
@@ -26,34 +27,27 @@
 
         <div id="controls">
             <p class="selector_header">
-              <label for="dist_amount">Distance range:</label>
-            <input type="text" id="dist_amount" readonly style="border:10px; color:black; font-weight:bold;">
+            <label for="dist_amount">Distance range: </label>
+            <input type="text" id="dist_amount" readonly style="margin-left:10px; border:10px; color:black; font-weight:bold;">
             </p>
             <div id="dist_slider"></div>
 
-            <!--
-            <p class="selector_header">
-              <label for="stars_amount">Stars range:</label>
-              <input type="text" id="stars_amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-            </p>
-            <div id="stars_slider"></div>
-
-            <p class="selector_header">
-              <label for="review_amount">Number of reviews:</label>
-              <input type="text" id="review_amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-            </p>
-            <div id="review_slider"></div>
-
-            <p class="selector_header">Additional Specifications:</p>
+            <p class="selector_header">What type of food are you looking for?</p>
             <div id="types">
                 <form action="">
-                <input class="type_check" type="checkbox" name="type" value="Reservations">Accepts reservations<br>
-                <input class="type_check" type="checkbox" name="type" value="Wifi">Wifi<br>
-                <input class="type_check" type="checkbox" name="type" value="Credit">Accepts credit cards<br>
-                <input class="type_check" type="checkbox" name="type" value="Take out">Take out
+                    <input class="type_check" type="checkbox" name="type" value="Burgers">Burgers<br> 
+                    <input class="type_check" type="checkbox" name="type" value="Sandwiches">Sandwiches<br>
+                    <input class="type_check" type="checkbox" name="type" value="Tacos">Tacos<br>
+                    <input class="type_check" type="checkbox" name="type" value="Hot Dogs">Hot dogs<br>          
+                    <input class="type_check" type="checkbox" name="type" value="Pizza">Pizza<br>     
+                    <input class="type_check" type="checkbox" name="type" value="Drinks">Drinks<br> 
+                    <input class="type_check" type="checkbox" name="type" value="Fruit">Fruit<br>
+                    <input class="type_check" type="checkbox" name="type" value="Candy">Candy<br>
+                    <input class="type_check" type="checkbox" name="type" value="Ice Cream">Ice Cream<br>
+                    <input class="type_check" type="checkbox" name="type" value="Cupcakes">Cupcakes<br>
                 </form>
             </div>
-            -->
+
         </div>
     </body>
 </html>

@@ -1,24 +1,22 @@
 #controls {
 	width: 25%;
 	min-width:150px;
-	margin: 20px;
+	margin: 10px;
+	margin-right: 25px;
 	float: right;
 	font-family: "Oswald";
 }
 
 .selector_header {
-	padding-top: 10px;
+	padding-top: 0px;
 	font-size: 20px;
 }
 
-#days {
-	margin-bottom: 10px;
-}
-
 #map-canvas {
-	width: 70%;
+	width: 65%;
     min-width: 700px;
-    height: 500px;
+    height: 600px;
+    margin-left: 80px;
     float: left;
 }
 

@@ -77,12 +77,36 @@ function check(item) {
     if (constraints["max_dist"] !== undefined) {
         valid = valid && d <= constraints["max_dist"];
     }
-
-    // //Stars, Reviews, Reservations, and other items for filtering go here
-    // if (constraints["Take out"] !== undefined && constraints["Take out"]) {
-    //     valid = valid && item["takeout"] == "TRUE"
-    // }
-
+    if (constraints["Burgers"] !== undefined && constraints["Burgers"]) {
+        valid = valid && item["Burgers"] === "TRUE";
+    }
+    if (constraints["Sandwiches"] !== undefined && constraints["Sandwiches"]) {
+        valid = valid && item["Sandwiches"] === "TRUE";
+    }
+    if (constraints["Tacos"] !== undefined && constraints["Tacos"]) {
+        valid = valid && item["Tacos"] === "TRUE";
+    }
+    if (constraints["Hot Dogs"] !== undefined && constraints["Hot Dogs"]) {
+        valid = valid && item["HotDogs"] === "TRUE";
+    }
+    if (constraints["Pizza"] !== undefined && constraints["Pizza"]) {
+        valid = valid && item["Pizza"] === "TRUE";
+    }
+    if (constraints["Drinks"] !== undefined && constraints["Drinks"]) {
+        valid = valid && item["Drinks"] === "TRUE";
+    }
+    if (constraints["Fruit"] !== undefined && constraints["Fruit"]) {
+        valid = valid && item["Fruit"] === "TRUE";
+    }
+    if (constraints["Candy"] !== undefined && constraints["Candy"]) {
+        valid = valid && item["Candy"] === "TRUE";
+    }
+    if (constraints["Ice Cream"] !== undefined && constraints["Ice Cream"]) {
+        valid = valid && item["IceCream"] === "TRUE";
+    }
+    if (constraints["Cupcakes"] !== undefined && constraints["Cupcakes"]) {
+        valid = valid && item["Cupcakes"] === "TRUE";
+    }
     return valid;
 }
 
@@ -110,4 +134,13 @@ $(function() {
         $("#dist_slider").slider("values", 1) + " mi");
 });
 
-// Handle checked boxes
+$(function() {
+    $(".type_check").change(function( event ) {
+        var checked = $(event.target).is(':checked');
+        var new_constraints = {};
+        new_constraints[$(event.target).val()] = checked;
+
+        handleConstraintsChange(new_constraints);
+    });
+});
+

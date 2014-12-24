@@ -38,6 +38,13 @@ function initialize() {
   google.maps.event.addListener(center, 'click', function() {
     infoWindow.open(map, center)
   });
+  
+  closeInfoWindow = function() {
+    infoWindow.close();  
+  }
+  
+  google.maps.event.addListener(map, 'click', closeInfoWindow);
+
   fillMap(); 
 }
 
@@ -59,7 +66,7 @@ function addMarker(location, row_id) {
 
   var message = "<p><b>" + name + "</b></p>" +
       "<p>" + address + "</p>" +
-      "<p>" + category + "</p>";
+      "<p><i>" + category + "</i></p>";
 
   var infoWindow = new google.maps.InfoWindow({});
 
