@@ -55,17 +55,13 @@ function addMarker(location, row_id) {
   var address = getAddress(row_id);
   var name = getName(row_id);
   var category = getCategory(row_id);
+  var foodItems = getFoodItems(row_id);
 
   var message = "<p><b>" + name + "</b></p>" +
       "<p>" + address + "</p>" +
       "<p>" + category + "</p>";
 
-  var infoWindow = new google.maps.InfoWindow({
-    //content: markers_map[row_id]["name"] + "\n" + markers_map[row_id]["full_address"]
-    //content: name;
-    //content: "<p>Restaurant name</p> \
-      //    <p>1111 Fake Address Dr. Berkeley, CA 94720</p>"
-  })
+  var infoWindow = new google.maps.InfoWindow({});
 
   infoWindow.setContent(message);
 
@@ -139,6 +135,7 @@ function getAddress(row_id) {
     }
 }
 
+// Return the name of the food truck.
 function getName(row_id) {
     for (var i = 0; i < validMarkers.length; i++) {
         if (validMarkers[i][""] == row_id) {
@@ -147,11 +144,21 @@ function getName(row_id) {
     }
 }
 
+// Returns the category that a food truck is in.
 function getCategory(row_id) {
     for (var i = 0; i < validMarkers.length; i++) {
         if (validMarkers[i][""] == row_id) {
             var category = validMarkers[i]["FoodItems"].split(":");
             return category[0];
+        }
+    }
+}
+
+// Returns an array of all fooditems that a food truck offers.
+function getFoodItems(row_id) {
+    for (var i = 0; i < validMarkers.length; i++) {
+        if (validMarkers[i][""] == row_id) {
+            return validMarkers[i]["FoodItems"].split(":");
         }
     }
 }
