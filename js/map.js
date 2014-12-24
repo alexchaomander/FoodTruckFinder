@@ -19,11 +19,6 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
-  // This event listener will call addMarker() when the map is clicked.
-/*  google.maps.event.addListener(map, 'click', function(event) {
-    addMarker(event.luatLng);
-  });*/
-
   // Adds a marker at the center of the map.
   // addMarker(sanFrancisco);
   var center = new google.maps.Marker({

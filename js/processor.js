@@ -143,4 +143,3 @@ $(function() {
         handleConstraintsChange(new_constraints);
     });
 });
-
