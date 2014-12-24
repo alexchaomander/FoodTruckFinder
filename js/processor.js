@@ -2,7 +2,7 @@
 var csv_text = "";
 var data = [];
 var validMarkers = [];
-$.get('/data/ApprovedFoodTrucks.csv', function(dat) {
+$.get('../data/ApprovedFoodTrucks.csv', function(dat) {
     csv_text = dat;
     data = $.csv.toObjects(csv_text);
     validMarkers = data.slice(0);
