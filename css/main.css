@@ -7,9 +7,17 @@
 	font-family: "Oswald";
 }
 
+#dist_slider {
+    font-size: 25px;
+}
+
+#types {
+    font-size: 20px;
+}
+
 .selector_header {
 	padding-top: 0px;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 #map-canvas {
