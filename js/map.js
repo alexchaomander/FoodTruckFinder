@@ -48,7 +48,7 @@ function addMarker(location, row_id) {
     position: location,
     map: map,
     title: row_id + "",
-    icon : '../images/foodTruckIcon.ico'
+    icon : 'https://raw.githubusercontent.com/alexchao56/FoodTruckFinder/master/images/foodTruckIcon.ico'
   });
   markers.push(marker);
   markers_map[row_id] = marker;
