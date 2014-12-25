@@ -23,3 +23,5 @@ Data processing, especially food category generation was handled using R, a tool
 *Note for the reader:*
 
 While my primariy interests are in data science and data engineering, one of the key aspects of those roles is the ability to be able to tell a story with the data. This can involve creating visualizations and tools that can help communicate whatever data is provided. Thus, even though web development and frontend work are not my main forte (I've actually only dabbled in these technologies in the past year so am still quite fresh!), they are skills worth having and developing and I'm glad I was able to showcase some of them through this app. 
+
+Feel free to reach out to me on [LinkedIn](www.linkedin.com/pub/alex-chao/42/600/8b4/)!
