@@ -8,7 +8,7 @@ The app is hosted on Github Pages [here](http://alexchao56.github.io/FoodTruckFi
 
 **Functionality**
 
-A user can do a general browse through the map selecting filters such as food categories or distance to help narrow their search. They can also input their location to visually see what food trucks are nearby to them. On-click of a food truck marker, it pulls up the name, the address, and the main type of food the truck is selling. 
+A user can do a general browse through the map selecting filters such as food categories or distance to help narrow their search. They can also input their location to visually see what food trucks are nearby to them. On-click of a food truck marker, it pulls up the name, the address, and the main type of food the truck is selling. If more fields in the dataset were available, I would have tried to either provide a website or a contact number so that a user could find out more about a particular food truck.
 
 **Technology**
 
