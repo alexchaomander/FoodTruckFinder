@@ -1,4 +1,4 @@
-Inspirted by the Uber Coding Challenge, this app provides a way to find nearby food trucks in San Francisco.
+Inspirted by the Uber Coding Challenge, this app provides a way to find nearby food trucks in San Francisco. The app is hosted on Github Pages [here](http://alexchao56.github.io/FoodTruckFinder/).
 
 **Functionality**
 
@@ -8,8 +8,6 @@ A user can do a general browse through the map selecting filters such as food ca
 
 Making use of the Google Maps API, the app was built primarily with HTML, CSS, and Javascript in particular jQuery. It is a static, single web page app that uses data available on [DataSF](http://www.datasf.org/): [Food
 Trucks](https://data.sfgov.org/Permitting/Mobile-Food-Facility-Permit/rqzj-sfat). Since the data is not too large, and does not require the infrastructure of a database to manage (although one can be easily set up for this), I opted to save the data in a CSV format. Data processing, especially food category generation was handled using R, a tool I'm most comfotable with to handle data manipulation tasks.
-
-The app is hosted on Github Pages [here](http://alexchao56.github.io/FoodTruckFinder/).
 
 ![alt tag](https://raw.githubusercontent.com/alexchao56/FoodTruckFinder/master/images/screenshot.png)
 
