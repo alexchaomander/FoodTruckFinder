@@ -1,3 +1,4 @@
+// Handles the processing and filtering for the app
 var csv_text = "";
 var data = [];
 var validMarkers = [];
