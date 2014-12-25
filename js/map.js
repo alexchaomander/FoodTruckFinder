@@ -116,7 +116,7 @@ function handleUpdate() {
     for (var i = 0; i < data.length; i++) {
         if ($.inArray(data[i],validMarkers) != -1) {
           if ($.inArray(markers_map[data[i][""]], markers) == -1) {
-            markers_map[data[i][""]].setMap(map);
+            //markers_map[data[i][""]].setMap(map);
             markers.push(markers_map[data[i][""]]);
           }
         } else {
