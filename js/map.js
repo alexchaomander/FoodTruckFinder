@@ -70,8 +70,6 @@ function initialize() {
   });
   // [END region_getplaces]
 
-
-
   // Adds a marker at the center of the map.
   // addMarker(sanFrancisco);
   var center = new google.maps.Marker({
@@ -124,13 +122,11 @@ function addMarker(location, row_id) {
     infoWindow.open(map, marker)
   });
 
-
   closeInfoWindow = function() {
     infoWindow.close();
   }
 
   google.maps.event.addListener(map, 'click', closeInfoWindow);
-
   
 }
 
