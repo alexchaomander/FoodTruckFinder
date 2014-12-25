@@ -1,4 +1,6 @@
-Inspirted by the Uber Coding Challenge, this app provides a way to find nearby food trucks in San Francisco. The app is hosted on Github Pages [here](http://alexchao56.github.io/FoodTruckFinder/).
+Inspirted by the Uber Coding Challenge, this app provides a way to find nearby food trucks in San Francisco. 
+
+The app is hosted on Github Pages [here](http://alexchao56.github.io/FoodTruckFinder/).
 
 **Functionality**
 
