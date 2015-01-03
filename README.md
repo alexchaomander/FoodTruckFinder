@@ -2,7 +2,7 @@ Inspired by the [Uber Coding Challenge](https://github.com/uber/coding-challenge
 
 The app is hosted on Github Pages [here](http://alexchao56.github.io/FoodTruckFinder/).
 
-*Note: Because of strange behavior from the Google Maps API, markers may not load on the first access of the page. If so, please refresh the page. If problems persist, you can run it locally by first cloning this repository and running:*
+*Note: Because of strange behavior from the Google Maps API, markers may not load on the subsequent accesses of the page. This is probably because the page is being cached on your browser and the GET requests to the Google Maps javascript files are returning 304 status codes. If so, please open a new browser and access the page. If problems persist, you can run it locally by first cloning this repository and running:*
 
 `python -m SimpleHTTPServer 8080` and going to `localhost:8080`
 
